@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      #wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 3px solid #000;
+        background-color: #fff;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        border: 2px solid #000;
+        padding: 30px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      header::before {
+        content: "header";
+        font-size: 14px;
+        color: #333;
+      }
+
+      #wrapper > div {
+        display: flex;
+        flex: 1;
+      }
+
+      nav {
+        width: 150px;
+        border: 2px solid #000;
+        border-top: none;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      nav::before {
+        content: "nav";
+        font-size: 14px;
+        color: #333;
+      }
+
+      main {
+        flex: 1;
+        border: 2px solid #000;
+        border-top: none;
+        border-left: none;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      main::before {
+        content: "main";
+        font-size: 14px;
+        color: #333;
+      }
+
+      footer {
+        border: 2px solid #000;
+        border-top: none;
+        padding: 30px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      footer::before {
+        content: "footer";
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header></header>
+      <div>
+        <nav></nav>
+        <main></main>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nền logo BIT 30px</title>
+    <style>
+      /* Nền với logo BIT lặp lại, cố định khi cuộn */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        /* Fallback màu nền nếu ảnh chưa tải */
+        background-color: #f5f5f5;
+
+        /* Ảnh nền */
+        background-image: url("https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/358689356_712772674194748_4833614343900488702_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=UfjgcT-9bZQQ7kNvwE7VSJe&_nc_oc=AdkCojsB1BbdNtgGBTwFFAaDSQiLm6LLjpE0VqwlL4oeiV7BVj8dL6ZwmmFrvwnPlqkwoXUPSSDaAfJz2DIHE7Bj&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=p6aTOYqP6SG0OoZ8BomNXQ&oh=00_AfeBR6WiHNlDd4Jc6tJ5Yn1WN1MIIWwfjfZaeVnIo_n94w&oe=690882DC"); /* <-- thay bằng đường dẫn logo tải lên */
+        background-repeat: repeat; /* lặp lại cả trục X và Y */
+        background-size: 30px 30px; /* mỗi ô gạch 30x30px */
+        background-position: 0 0; /* bắt đầu từ góc trái trên */
+        background-attachment: fixed; /* cố định khi cuộn trang */
+      }
+
+      /* Nội dung demo (không bắt buộc) */
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 64px 16px 200vh; /* thêm chiều cao để test cuộn */
+        font: 16px/1.6 system-ui, Arial, sans-serif;
+        backdrop-filter: none; /* có thể dùng blur nếu muốn */
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 32px;
+        color: #222;
+      }
+    </style>
+  </head>
+</html>
